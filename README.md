@@ -1,10 +1,14 @@
 # Accounting-Agency
 
----Projekat za kurs "Web tehnologije", ETF Sarajevo, studijska godina 2016/2017---
+
+*-*-*- Projekat za kurs "Web tehnologije", ETF Sarajevo, studijska godina 2016/2017 -*-*-*
+-------------------------------------------------------------------------------------------
 
 
 STUDENT : Jasminko Vidaković
+
 BROJ INDEKSA : 17210
+
 
 
 OPIS TEME :
