@@ -25,7 +25,7 @@ h1 {
 	font-family: 'Courgette', cursive;
 	color: #C61A1A;
 	text-decoration: bold;
-	font-size: 45px;
+	font-size: 40px;
 	width: 200px;
 	text-align: center;
 	margin-left: auto;
@@ -47,7 +47,7 @@ h5 {
 	margin-right: auto;
 }
 
-#slika1, slika2, slika3 {
+#slika1, #slika2, #slika3 {
 	width: 800px;
 	height: 600px;
 }
