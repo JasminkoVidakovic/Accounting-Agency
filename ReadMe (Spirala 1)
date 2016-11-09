@@ -1,0 +1,51 @@
+
+
+                                    SPIRALA 1 - README
+                       _____________________________________________  
+                       
+                       
+        - Dodano je 7 HTML formi i pripadnih im CSS fileova : Home, About Us, Contact, Donwload, Prices, Gallery i custom Contact Form.
+          Na pomenutim HTML dokumentima je dodano dosta elemenata: paragrafi, slike, header, footer, buttoni, tabele, liste, formiran 
+          navigation bar, implementirano par linkove na interne dokumente projeka te i na jedan eksterni (FB) i tako dalje.
+          Implementiran slideshow, emdeddani su u file Google Maps koji prezentuje lokaciju agencije i Facebook Buttons preko kojih se
+          dolazi do Facebook pagea agencije. Implementiran je download par dokumenata, ciji oblik je custom i predstavlja "Kolekciju"
+          par div-ova. Implementirano interno javljanje preko emaila kroz Outlook.
+          Formira se odmah automatski Subject i Recepient. Implementirano otvaranje nekih formi na posebnim tabova te povratak s tih tabova
+          nazad na index.
+          Dizajn je responzivan, kako za 16:9 ratio, tako i za 4:3, rađen za Safari, podržava Firefox i Chrome, što je dovelo
+          do problema pri izgradnji CSS-ova i to veoma dugih, jer Safari bas ne funkcionise kao i Chrome i mora se puno "štiklati" da se 
+          nešto namjesti na sva 3 browsera, još kad to treba da bude i za 4:3 aspect ratio, bude havarija. Problemi sa gridom uoceni tu.
+        - Grid radi toga rađen "u hodu", po potrebi dijeljeni redovi interno na kolone, po 20%, 33%, 50%, 100%, sve po potrebni gdje je
+          uoceno da treba, nema fiksacije . Jako puno "Igranja" sa marginama i indentovanjem, nažalost .
+        - Implementirano je da se po media query-ima mjenja stil prikaza i raspored elemenata na stranica, kao npr. silazak navi bar-a
+          iz headera ka centru nadole, floatanje svih elemenata prema lijevo za prikaz na malim zaslonima te da se u tom slucaju prikazuje
+          samo 1 element po redu.
+          
+        
+        NIJE URAĐENO SLIJEDEĆE:
+        _______________________
+        
+        - Tabela na "O nama", trebala bi da bude aktivna, da se "negdje rucno" unose podaci o broju klijenata u sistem i da se to ispisuje
+          u tabeli, te da se po broju ocjena datih racuna prosjecna ocjena za agenciju u odredjenoj godini na osnovu odredjenog broja glasova.
+          Za sada mi treba vise tehnologija da to ostvarim, pa sam ostavio to za neku novu spiralu.
+         - Contact Us forma će da kupi unesene podatke i snima ih negdje, te na osnovu toga prezentirati će se neki podaci na formama.
+         - Vjerovatno će uskoro FB buttons biti zamijenjeni iFramom Facebook stranice agencije.
+         - Galerija, Contact Us forma i Cjenik će se još dorađivati, dok smislim šta se može tu uraditi da se pruži neka dinamička interakcija
+           za korisnika tu.
+         ...
+         
+         BUGOVI
+         _______
+         
+         - Nedostatak pinpoint markera na Google Maps div-u, biće riješeno dok Google approva valjda page.
+         - Ponegdje radi štimanja margina po pikselima na što me Safari tjerao se dešava da se nekada vidi da neke forme nisu baš
+           skroz fino poravnate i da to zavisi od resposnive viewa, biće riješavano pomalo vremenom.
+         - Na neke 2-3 forme je udaljenost izmedju 2 diva ili neka elementa veća nego što bi trebalo da to sve lijepo izgleda, pogotovo na manjim
+           rezolucijama , također ovisno od margina, rješavati će se uporedo sa ovime.
+         - Sam odabir boja, dizaja i grafika mi nije jaca strana, nadam se da se umjetnički dojam ne ocjenjuje, nemam šlifa za lijep
+           neki plaho grafički dizajn.
+      
+          - CSS Validator mi neće da validira konstrukcije tipa "display: none;", "display: show;", "text-decoration: bold;" i slicno, iako
+            te naredbe vidno funkcionisu i odražavaju se ispravno na prikaz, samo Validator ih neće validirati. To je problem na 2-3 forme,
+            gdje se radi po 3-4 linije koda ovog tipa ne može validirati CSS, iako su i po w3 te forme uredne, te imaju iste primjere
+            korištenja tih naredbi kao i ja.
