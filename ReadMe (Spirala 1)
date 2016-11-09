@@ -56,6 +56,9 @@
          Rađeno na iPadu Pro, Safari nevjerodostojan, prikaz na iPadu je 4:3 i nije dobra ideja da taj ratio bude referentan, drugi i treci
          "bugovi" bi bili rijeseni lako da ispocetka napravim nove CSS file-ove lijepo izdijeljene kolone, svaki CSS file podijeljen na 
          onoliki broj kolona koliki je maksimalan broj elemenata koji se javljaju u nekoj koloni u pripadnom HTML fajlu te onoliko redova koliko
-         mi je potrebno horizontalnih contenta maksimalno po jednom HTML file-u. Ukoliko mi vrijeme dopusti, mislim da ću promijeniti dizajn.
+         mi je potrebno horizontalnih contenta maksimalno po jednom HTML file-u. 
+         Tada bih sve mogao lako rijesiti zadavajući sve height/width properties-e preko percentage-a, kao i margine.
+         Rad za pikseliziranjima izuzetno neefikasan i nikad ne dovede do rješenja koje bi rad preko postotaka doveo.
+         Ukoliko mi vrijeme dopusti, mislim da ću promijeniti dizajn.
          
          Google Marker problem mi nije jasan trenutno, kao ni problem CSS validacije, tu stvarno ne znam što ne prolazi validation.
