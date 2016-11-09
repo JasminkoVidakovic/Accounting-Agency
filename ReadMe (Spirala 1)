@@ -27,7 +27,7 @@
         
         - Tabela na "O nama", trebala bi da bude aktivna, da se "negdje rucno" unose podaci o broju klijenata u sistem i da se to ispisuje
           u tabeli, te da se po broju ocjena datih racuna prosjecna ocjena za agenciju u odredjenoj godini na osnovu odredjenog broja glasova.
-          Za sada mi treba vise tehnologija da to ostvarim, pa sam ostavio to za neku novu spiralu.
+          Za sada mi treba vise tehnologija da to ostvarim, pa sam ostavio to za neku novu spiralu, trenutno nisam dovoljno potkovan za to.
          - Contact Us forma će da kupi unesene podatke i snima ih negdje, te na osnovu toga prezentirati će se neki podaci na formama.
          - Vjerovatno će uskoro FB buttons biti zamijenjeni iFramom Facebook stranice agencije.
          - Galerija, Contact Us forma i Cjenik će se još dorađivati, dok smislim šta se može tu uraditi da se pruži neka dinamička interakcija
@@ -50,4 +50,12 @@
             gdje se radi po 3-4 linije koda ovog tipa ne može validirati CSS, iako su i po w3 te forme uredne, te imaju iste primjere
             korištenja tih naredbi kao i ja.
             
-          - Rađeno na iPadu, Safari nevjerodostojan, prikaz na iPadu je 4:3 i nije dobra ideja da taj ratio bude referentan
+         POUKA I LIJEK ZA BUGOVE:
+         ________________________
+         
+         Rađeno na iPadu Pro, Safari nevjerodostojan, prikaz na iPadu je 4:3 i nije dobra ideja da taj ratio bude referentan, drugi i treci
+         "bugovi" bi bili rijeseni lako da ispocetka napravim nove CSS file-ove lijepo izdijeljene kolone, svaki CSS file podijeljen na 
+         onoliki broj kolona koliki je maksimalan broj elemenata koji se javljaju u nekoj koloni u pripadnom HTML fajlu te onoliko redova koliko
+         mi je potrebno horizontalnih contenta maksimalno po jednom HTML file-u. Ukoliko mi vrijeme dopusti, mislim da ću promijeniti dizajn.
+         
+         Google Marker problem mi nije jasan trenutno, kao ni problem CSS validacije, tu stvarno ne znam što ne prolazi validation.
