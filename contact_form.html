@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Us</title>
+	<meta name="author" content="your name" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="contact_form_style.css" type="text/css" />
+</head>
+	<body>
+			<form>
+				<div id="unosi">
+				<div id="ime_prezime">
+					<p>Ime i prezime / anonimni naziv: <input id="ime_prez" type="text" name="ime" required>
+					<p>Broj telefona (nije obavezno):&nbsp;&nbsp;&nbsp; <input id="tel" type="text" name="ime">
+					<p>Email (nije obavezno):&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="email" type="email" name="ime" required placeholder="Molim Vas unesite valjanu email adresu">
+					<p>Vaša ocjena (nije obavezno) od 1-5:&nbsp;&nbsp;&nbsp; <input type="number" name="ocjena" min="0" max="5" required></p>
+					<p>Ostavite "0" ako nas ne želite ocijeniti</p>
+					<br><br>
+					<p>Vaša poruka (obavezno):</p>
+					<textarea id="poruka" name="msg" cols="100" rows="10" required></textarea>
+					<br><br>
+					<input id="potvrdi" type="submit" value="Potvrdi"/>
+					<input id="ponisti" type="reset" value="Poništi"/>
+					<br><br><br>
+					<button id="povratak" action="contact.html" type="button" onclick="window.open('', '_self', ''); window.close();">Povratak nazad</button>
+				</div>
+				</div>
+			</form>
+	</body>
+	</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<title>Bilansa-Gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="slideshow_style.css" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+<body>
+
+<div class="galerija">
+  <h1>Galerija</h1>
+</div>
+
+<div class="image_container" style="width:800px; height: 600px;">
+
+<div id="lijevi"><a class="left" onclick="plusDivs(-1)"><b>&#10094;</b></a></div>
+<div id="desni"><a class="right" onclick="plusDivs(1)"><b>&#10095;</b></a></div>
+
+<div class="mySlides">
+  <img id="slika1" src="slika1.jpg" alt="slika1">
+</div>
+
+<div class="mySlides">
+  <img id="slika2" src="slika2.jpg" alt="slika2">
+</div>
+
+<div class="mySlides">
+  <img id="slika3" src="slika3.jpg" alt="slika3">
+</div>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+<br><br>
+<h5><a href="javascript:window.open('','_self').close();">Povratak na početnu</a></h5>
+
+</body>
+</html>
+
