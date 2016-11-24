@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Us</title>
+	<meta name="author" content="your name" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="contact_form_style.css" type="text/css" />
+		<script type="text/javascript" src="contact_form.js" charset="UTF-8"></script>
+</head>
+	<body>
+			<form name="mainForm" onsubmit="return ValidateName()">
+				<div id="unosi">
+				<div id="ime_prezime">
+					<p>Ime i prezime (*):&nbsp;&nbsp; <input id="ime" name="ime" oninput="CheckName()" onchange="CheckName()" type="text">
+					<p>Broj telefona (*):&nbsp;&nbsp;&nbsp;&nbsp; <input id="tel" type="text" name="ime" oninput="CheckPhone()" onchange="CheckPhone()">
+					<p>Email (*):&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="email" name="email" type="text" oninput="CheckMail()" onchange="CheckMail()">
+					<p>Vaša ocjena (1-5):&nbsp; <input type="text" id="ocjena" value="0" oninput="CheckGrade()" onchange="CheckGrade()"></p>
+					<p>Ostavite "0" ako nas ne želite ocijeniti</p>
+					<br><br>
+					<p>Vaša poruka (*):</p>
+					<textarea id="poruka" name="msg" cols="100" rows="10" oninput="CheckMsg()" onchange="CheckMsg()"></textarea>
+					<br><br>
+					<input id="potvrdi" type="submit" value="Potvrdi"/>
+					<input id="ponisti" type="reset" value="Poništi"/>
+					<br><br><br>
+					<button id="povratak" type="button" action="contact.html" onclick="window.open('', '_self', ''); window.close();">Povratak nazad</button>
+				</div>
+				</div>
+			</form>
+	</body>
+	</html>
