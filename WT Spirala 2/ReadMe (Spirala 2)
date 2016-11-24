@@ -15,6 +15,7 @@ koji mogu biti upravo prije par minuta izmijenjeni u XML-u bez da se mora vršit
 NIJE URAĐENO:
 ------------
 - mislim da sam uradio sve 3 tražene stavke Spirale(pod a, b i c)
+- nije jedino testirano rješenje za c), Ajax calling, to namjeravam čim prije dodjem do PC-a na kojem mogu pokrenuti WAMP
 
 BUGOVI:
 -------
