@@ -11,3 +11,17 @@ informacije o tipu formata koji mora biti zadovoljen u tim formama
 - na dokumentu about.html u tabelu na kraju dokumenta je dodan hyperlink "Osvježi tabelu" koji preko JS-a i Ajaxa treba da fetcha određene
 podatke ove tabele iz eksternog XML dokumenta (TabelaXML.xml), na taj način je ostvareno da se pri klikom na taj link mogu dobiti podaci
 koji mogu biti upravo prije par minuta izmijenjeni u XML-u bez da se mora vršiti refresh stranice
+
+NIJE URAĐENO:
+------------
+- mislim da sam uradio sve 3 tražene stavke Spirale(pod a, b i c)
+
+BUGOVI:
+-------
+
+- prilikom validacije input formi, kada je sve na pocetku prazno, tek otvorena forma, kada se klikne ne dugme "Potvrdi" 1.put, ne izbaci se 
+poruka šta tačno treba popraviti, kada se opet 2. put klikne Potvrdi, tada se pokaze poruka na prvoj formi s vrha koja nije zadovoljila 
+validaciju . Validation poruka ipak bude setovana. To sam tek sad primijetio, popravim ubrzo, jednostavno nisam primijetio do sada.
+- nisam bio u stanju da pokrenem Wamp i nisam mogao da testiram da li radi Ajax calling, konstantno mi crasha sa porukom da mi fali neki .dll
+file, kada reinstaliram opet isti problem imam, verzija od prije 2 dana je radila na prijateljevom PCu, ali sam pravio neke izmjene i ne 
+znam da li će raditi, nadam se da mi nećete uzeti za veliki problem to, ako treba na tutorijalu ću pokrenuti sve i demonstrirati.
