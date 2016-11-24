@@ -1,0 +1,10 @@
+URAĐENO JE :
+------------
+
+- updateovan slideshow u galeriji na onakav koji je tražen specifikacijom Spirale 2, dodano listanje preko buttona, thumbnails slika ispod
+glavne slike, mogućnost fullsreen modusa trenutne glavne slike duplim klikom na istu de izlazak iz fullscreena sa ESC
+- u galeriji je također dodan i jedan button koji se pri hoveru pretvara u mali dropdown menu, kada nestane hovera, nestane i tog dropdown
+  menija, samim klikom na button vrsi se povratak na index.html, pri cekanju se otvara dropdown meni za opcionalni odlazak na druge forme
+- dodana validacija 5 input formi u kontaktima (ime, broj telefona, email, ocjena, poruka) . Ne dopusta se submit, tj. getanje podataka ako nije
+sve validirano od tih 5 formi, pri tome forme koje su invalid postaju crvene, pri ponovnom kliku na Potvrdi button korisnik dobija tacne
+informacije o tipu formata koji mora biti zadovoljen u tim formama
