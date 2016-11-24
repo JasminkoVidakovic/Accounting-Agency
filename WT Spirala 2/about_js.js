@@ -1,16 +1,18 @@
-	function loadDoc() 
+	function UcitajXML() 
 	{
-	var xhttp = new XMLHttpRequest();
-	xhttp.onreadystatechange = function() 
-	{
-		if (this.readyState == 4 && this.status == 200) 
-		{
-			PopuniTabelu(this);
-		}
-	};
 	
-	xhttp.open("GET", "TabelaXML.xml", true);
-	xhttp.send();
+		var xhttp = new XMLHttpRequest();
+	
+		xhttp.onreadystatechange = function() 
+		{
+			if (this.readyState == 4 && this.status == 200) 
+			{
+				PopuniTabelu(this);
+			}
+		};
+	
+		xhttp.open("GET", "TabelaXML.xml", true);
+		xhttp.send();
 	}
  
  
@@ -26,7 +28,7 @@
 		
 		var x = xmlDoc.getElementsByTagName("Kriterij");
 		
-		for (i = 0; i <x.length; i++)  							// i = 3 , j = 4 za slucaj moje tabele sad
+		for (i = 0; i <x.length; i++)  							// i = 2 , j = 3 za slucaj moje tabele sad
 		{ 
 			var y = x[i].getElementsByTagName("Vrijednost"); // [0].childNodes[0].nodeValue;
 	
@@ -37,6 +39,7 @@
 					rast.getElementsByTagName('td')[j].innerHTML = y[j].childNodes[0].nodeValue;  // broj celija jednak broju j-ova
 				}
 			}
+			
 			else if(i==1)
 			{
 				for(j=0; j < y.length; j++)
@@ -44,6 +47,7 @@
 					ocjene.getElementsByTagName('td')[j].innerHTML = y[j].childNodes[0].nodeValue;
 				}
 			}
+			
 			else if(i==2)
 			{
 				for(j=0; j < y.length; j++)
