@@ -17,6 +17,14 @@ NIJE URAĐENO:
 - mislim da sam uradio sve 3 tražene stavke Spirale(pod a, b i c)
 - nije jedino testirano rješenje za c), Ajax calling, to namjeravam čim prije dodjem do PC-a na kojem mogu pokrenuti WAMP
 
+P.S.
+- Ajax call nije implementiran na svakoj formi koja zadržava svoju vizualnu homogenost, a mijenja sadržaj, primjer primjene i rada sam 
+odlučio raditi na tabeli, bilo je tu još stvari gdje se Ajax može primijeniti ali stvarno to nemam sad vremena, ispitna je sedmica :) . 
+
+Dropdown menu sam implementirao samo na jednu formi, da pokažem da to znam uraditi, na ostalim formama mi se ne slaže sa idejom o izgledu 
+ali ako bi trebalo nekako bih ga mogao uklopiti u sve to, iako ne vidim neku potrebu, nadam se da se ne ocjenjuje kvantitet u tom slučaju,
+svakako bi to bilo u principu copy-paste s forme na formu.
+
 BUGOVI:
 -------
 
