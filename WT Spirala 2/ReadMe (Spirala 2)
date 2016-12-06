@@ -12,6 +12,10 @@ informacije o tipu formata koji mora biti zadovoljen u tim formama
 podatke ove tabele iz eksternog XML dokumenta (TabelaXML.xml), na taj način je ostvareno da se pri klikom na taj link mogu dobiti podaci
 koji mogu biti upravo prije par minuta izmijenjeni u XML-u bez da se mora vršiti refresh stranice
 
+P.S. Dio JS koda koji je odgovoran za to da se dropdown meni close-a nakon određenog vremena inaktivnosti van menija je KOPIRAN s neta,
+(vidi se po komentarima) iz razloga što tu vremensku ovisnost jednostavno nisam znao sam kako bih uradio, međutim analizirao sam taj dio koda i shvatam sad kako
+radi i po potrebi ga mogu "odbraniti".
+
 NIJE URAĐENO:
 ------------
 - mislim da sam uradio sve 3 tražene stavke Spirale(pod a, b i c)
