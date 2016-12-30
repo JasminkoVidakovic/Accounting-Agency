@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sve_poruke>
+  <poruka>
+    <ime>Jasminko Vidakovic</ime>
+    <telefon>061/434-124</telefon>
+    <email>darkvalkirion@gmail.com</email>
+    <ocjena>5</ocjena>
+    <msg>Jasminko</msg>
+    <napomena/>
+  </poruka>
+  <poruka>
+    <ime>Mensura Vidakovic</ime>
+    <telefon>062/473-182</telefon>
+    <email>mensura0808@gmail.com</email>
+    <ocjena>0</ocjena>
+    <msg>Mensura</msg>
+    <napomena/>
+  </poruka>
+  <poruka>
+    <ime>Nusreta Topalovic</ime>
+    <telefon>061/476-453</telefon>
+    <email>nusreta.topal@gmail.com</email>
+    <ocjena>4</ocjena>
+    <msg>Nuna</msg>
+    <napomena></napomena>
+  </poruka>
+</sve_poruke>
