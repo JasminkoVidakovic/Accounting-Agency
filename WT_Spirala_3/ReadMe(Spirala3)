@@ -1,0 +1,29 @@
+ŠTA JE URADJENO?
+---------------------
+- Napravljena login forma na index.php podstranici, gdje se po uspješnom loginu, vrši hide input polja i ispisuje se da je login uspješan.
+  Te informacije su dostupne i na vrhu iste podstranice, gdje se vidi koji korisnik je logiran, te tu pristupa dashboardu i logoutu.
+- Napravljen je dashboard za administratora, admin.php, odakle administrator upravlja primljenim upitima na stranici, učitava ih, briše i
+  edituje ih u smislu da uz svaku poruku može dodati sebi ili drugima napomenu vezanu za tu poruku. Također se te napomene mogu mijenjati.
+- Sa admin.php je moguće praviti i downloadati izvještaje u .csv i .pdf formatu, koji podrazumijevaju uređeni formatirani ispis primljenih
+  poruka. Kreirani izvještaji sadrže samo one podatke o porukama koje su u tom trenutku bile zapisane u .xml-u poruke.xml .
+- Sva manipulacija sa porukama se instantno dešava u njihovom .xml dokumentu, a također se odmah pusha i na dashboard.
+- Omogućena je pretraga poruka na osnovu imena i emaila pošiljatelja, bez refreshanja podstranice. Svi rezultati se ispisuju odmah ispod
+  tako da nije pravljen poseban page za tu aktivnost. Ideja je da admin provjeri ko je sve slao poruke u potrazi za specifičnim emailom
+  ili imenom pošiljatelja.
+- Validacija unesenih poruka preko contact_form.php je dvostruka, vrši se client-side validacija preko JS-a što je prisutno od prošle
+  spirale, a i server-side preko PHP-a neposredno prije spašavanja u .xml.
+- Svi inputi su XSS-proof, tako što se svaki input prvo provjeri funkcijom AvoidXSS(), pa tek poslije se vrše dalje operacije.
+  Također se provjeravaju i svi podaci koji se mogu slati get metodom kroz URL.
+- Principi logiranja su odrađeni kroz sesije.
+- Osigurano je da guest korisnik ne može direktno kucanjem npr. admin.php u URL pristupiti toj stranici, kao ni drugim podstranicama
+  rezervisanim za admina.
+- Korištena je biblioteka FPDF kao i php skripta tableParser.php za lako interpretiranje html stringova u njihovo smještanje u PDF
+  dokument.
+
+BUGOVI(nije urađeno ili zaboravljeno)
+------
+- Zaboravio sam zaštiti edit.php formu od ulaza od strane guestova, biće promijenjeno za narednu spiralu.
+
+ISPRAVLJENO
+-----------
+- AJAX učitavanje tabele iz Spirale 2 na about.html podstranici
