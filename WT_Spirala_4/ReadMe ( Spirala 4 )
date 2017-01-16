@@ -1,0 +1,48 @@
+ŠTA JE URAĐENO
+---------------
+a)  Napravljena je SQL baza na PHPmyAdmin pod imenom "bilansa". Sadrži 3 međusobno vezane tabel + 2 samostalne tabele. Navedene 3 tabele
+    koje su međusobno vezane foreign key-evima su "klijenti", "online_klijenti" i "mailing_lista". Ostali detalji su vidljivi u PHPmyAdmin,
+    da ih sad ne opisujem dalje. Baza je eksportovana, nalazi se u folderu "SQL Baza", radi sigurnosti i podrške je eksportovana u vidu 3
+    različita oblika, od toga 2 kompresovana (zip i gzip), te "goli" .sql oblik.
+b)  Na podstranici "admin.php" se nalazi button "Učitaj u DB", kojim se tabela "poruke" u bazi puni onim porukama koje se već nalaze
+    u XML-u. U slučaju da se iz XML-a proba u bazu izvesti doslovno ista poruka koja je već u tabeli, neće biti izvezena.
+    Molim da se nakon testiranja provjeri da li je tabela "poruke" kao i XML prazan, da ne bude nekih kolizija oko A_I kada se testirao
+    dio pod C.
+c) Svaka poruka koja se unosi preko "contact_form.php", spasi se i u XML i u tabelu "poruke" moje baze. Ista stvar je i sa brisanjem poruka.
+   Primjer ispisa podataka iz te tabele baze se može vidjeti ako se klikne na link "Ispis poruka iz baze", u gornjem desnom uglu podstranice
+   "admin.php".
+
+EXTRA: Implementirano je grupno slanje email-a (newsletter), klikom na link "Grupni email" na vrhu podstranice "admin.php".
+       Dolaskom na tu lokaciju se može i provjeriti lista mail adresa na koju se sve šalje mail, a ti mailovi se kupe od registrovanih 
+       klijenata u bazi (tabele "klijenti" i "mailing_lista").
+       Ako se bude testiralo, molim samo da se promijeni apsolutna adresa koja vodi do file-a "sendmail.ini" u folderu "sendmail" koji se 
+       nalazi u folderu ove spirale. Također, potrebno je na WAMP-u izmijeniti "php.ini" file, tako da se ode u [mail function] sekciju
+       i postave se slijedeće vrijednosti da budu kao dole:
+       
+       SMTP = localhost
+       smtp_port = 465
+       sendmail_path = (apsolutna putanja do "sendmail.exe" filea, u mene je : sendmail_path = "C:\wamp64\www\WT_Spirala_4\sendmail -t" )
+       
+d) Website je postavljen na hosting, adresa je "http://bilansa.com/", upload je izvršen ovdje jer OpenShift ne prihvata aplikacije Sendmail
+   i sTunnel koje su u ovom folderu.
+   
+e) Napravljen je servis "service.php", koji se poziva sa URL parametrom "id", gdje je "id" broj PK-a nekog klijenta u bazi
+   Ukoliko se pozove "service.php?id=1", biće vraćeni svih podaci o klijentu sa ID brojem 1 u tabeli "klijenti":
+   Rezultat se vraća u obliku JSON objekta, u folderu "Postman Screenshots" su priložene 3 slike o tome kako sam testirao ovaj servis
+   preko Postman ekstenzije za Chrome.
+   
+   BUGOVI
+   ------
+   
+   - Primijećeno da u nekim slučajevima je autoincrement zezao, nakon što se isprazni sva tabela baze (npr. "poruke"), i nakon toga se 
+     unese novi entry, ID brojevi (PK-ovi) nisu kretali od 1, već od broja na kojem je ostao posljedi entry prije brisanja.
+     To sam uklonio, bar koliko sam testirao, molio bih da mi ne uzme za zlo ukoliko se u nekoj situaciji to opet javi, pri praznoj bazi
+     i XML-u provjeriti to, klik na tabelu "poruke", klik na karticu "Operations", auto increment treba biti stavljen na 1.
+     Problem se javlja i drugim ljudima.
+     
+   - Na web hostingu, nakon logovanja na admin ili user account, kada se želim vratiti na home page tako logovan sa dashboarda,
+     index.php ostane blank. Ostale podstranice i skripte rade OK. Ovo se javlja samo u slučaju logina, na forumima govore treba
+     reorganizovati sesije i cookies tu, ali trenutno nemam vremena to istraziti. Ostalo funkcionise OK.
+     
+   - 
+       
