@@ -49,4 +49,7 @@ f) Rezultat se vraća u obliku JSON objekta, u folderu "Postman Screenshots" su 
    - U slučaju da se ne mogne uspješno testiranje slanje grupnih mailova, molim za mogućnost da to demonstriram na svom laptopu.
     Naime, jako puno truda i caka je uloženo u ovo, moguće da nešto ne budete postavili pa da ne radi, u tom slučaju se nadam da će
     mi biti dozvoljeno da to demonstriram.
+  
+   - Radi jednostavnosti u radu i testiranju nije korišteno npr. md5 sifriranje nekih stvari, iako znam da je trebalo i znam to uraditi.
+     To ću da dodatno demonstriram na web hostingu, jer tamo i ima smisla.
        
