@@ -43,7 +43,8 @@ EXTRA2 : Dodan je 1 admin i 3 "obična" usera, njihovi pristupni podaci se mogu 
      To sam uklonio, bar koliko sam testirao, molio bih da mi ne uzme za zlo ukoliko se u nekoj situaciji to opet javi, pri praznoj bazi
      i XML-u provjeriti to, klik na tabelu "poruke", klik na karticu "Operations", auto increment treba biti stavljen na 1.
      Problem se javlja i drugim ljudima, te je ostavljelo traga da se ne obrise neki odg. entry koji bi trebao, jer ID-ovi nisu kako 
-     treba i slične stvari.
+     treba i slične stvari. Može se desiti pri miješanju funkcionalnosti pod b) sa onom pod c), ali svakako samo ostavio ovako da se
+     može sve vidjeti, mogao sam izbaciti XML ali sam ostavio radi jednostavnosti ovog pod b)
      
    - Na web hostingu, nakon logovanja na admin ili user account, kada se želim vratiti na home page tako logovan sa dashboarda,
      index.php ostane blank. Ostale podstranice i skripte rade OK. Ovo se javlja samo u slučaju logina, na forumima govore treba
