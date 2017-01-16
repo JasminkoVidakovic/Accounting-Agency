@@ -27,8 +27,9 @@ d) Website je postavljen na hosting, adresa je "http://bilansa.com/", upload je 
    i sTunnel koje su u ovom folderu.
    
 e) Napravljen je servis "service.php", koji se poziva sa URL parametrom "id", gdje je "id" broj PK-a nekog klijenta u bazi
-   Ukoliko se pozove "service.php?id=1", biće vraćeni svih podaci o klijentu sa ID brojem 1 u tabeli "klijenti":
-   Rezultat se vraća u obliku JSON objekta, u folderu "Postman Screenshots" su priložene 3 slike o tome kako sam testirao ovaj servis
+   Ukoliko se pozove "service.php?id=1", biće vraćeni svih podaci o klijentu sa ID brojem 1 u tabeli "klijenti".
+
+f) Rezultat se vraća u obliku JSON objekta, u folderu "Postman Screenshots" su priložene 3 slike o tome kako sam testirao ovaj servis
    preko Postman ekstenzije za Chrome.
    
    BUGOVI
