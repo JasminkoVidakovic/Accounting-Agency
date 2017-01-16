@@ -38,11 +38,14 @@ e) Napravljen je servis "service.php", koji se poziva sa URL parametrom "id", gd
      unese novi entry, ID brojevi (PK-ovi) nisu kretali od 1, već od broja na kojem je ostao posljedi entry prije brisanja.
      To sam uklonio, bar koliko sam testirao, molio bih da mi ne uzme za zlo ukoliko se u nekoj situaciji to opet javi, pri praznoj bazi
      i XML-u provjeriti to, klik na tabelu "poruke", klik na karticu "Operations", auto increment treba biti stavljen na 1.
-     Problem se javlja i drugim ljudima.
+     Problem se javlja i drugim ljudima, te je ostavljelo traga da se ne obrise neki odg. entry koji bi trebao, jer ID-ovi nisu kako 
+     treba i slične stvari.
      
    - Na web hostingu, nakon logovanja na admin ili user account, kada se želim vratiti na home page tako logovan sa dashboarda,
      index.php ostane blank. Ostale podstranice i skripte rade OK. Ovo se javlja samo u slučaju logina, na forumima govore treba
      reorganizovati sesije i cookies tu, ali trenutno nemam vremena to istraziti. Ostalo funkcionise OK.
      
-   - 
+   - U slučaju da se ne mogne uspješno testiranje slanje grupnih mailova, molim za mogućnost da to demonstriram na svom laptopu.
+    Naime, jako puno truda i caka je uloženo u ovo, moguće da nešto ne budete postavili pa da ne radi, u tom slučaju se nadam da će
+    mi biti dozvoljeno da to demonstriram.
        
