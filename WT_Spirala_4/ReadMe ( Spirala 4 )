@@ -45,15 +45,23 @@ EXTRA2 : Dodan je 1 admin i 3 "obična" usera, njihovi pristupni podaci se mogu 
      Problem se javlja i drugim ljudima, te je ostavljelo traga da se ne obrise neki odg. entry koji bi trebao, jer ID-ovi nisu kako 
      treba i slične stvari. Može se desiti pri miješanju funkcionalnosti pod b) sa onom pod c), ali svakako samo ostavio ovako da se
      može sve vidjeti, mogao sam izbaciti XML ali sam ostavio radi jednostavnosti ovog pod b)
+   
+  
+   - Radi jednostavnosti u radu i testiranju nije korišteno npr. md5 sifriranje nekih stvari, iako znam da je trebalo i znam to uraditi.
+     To ću da dodatno demonstriram na web hostingu, jer tamo i ima smisla.
      
+     
+     
+ RIJEŠENI BUGOVI NA HOSTINGU (UPDATE ON 17.01.2017 11:05h)
+ ---------------------------------------------------------
+ 
+      [OVAJ BUG JE SADA RIJEŠEN, SVE FUNKCIONIŠE!]
    - Na web hostingu, nakon logovanja na admin ili user account, kada se želim vratiti na home page tako logovan sa dashboarda,
      index.php ostane blank. Ostale podstranice i skripte rade OK. Ovo se javlja samo u slučaju logina, na forumima govore treba
      reorganizovati sesije i cookies tu, ali trenutno nemam vremena to istraziti. Ostalo funkcionise OK.
      
+     [NA WEB HOSTU POPRAVLJENO, BEZ IKAKVIH DODATNIH POSTAVKI SE MOŽE TESTIRATI]
    - U slučaju da se ne mogne uspješno testiranje slanje grupnih mailova, molim za mogućnost da to demonstriram na svom laptopu.
     Naime, jako puno truda i caka je uloženo u ovo, moguće da nešto ne budete postavili pa da ne radi, u tom slučaju se nadam da će
     mi biti dozvoljeno da to demonstriram.
-  
-   - Radi jednostavnosti u radu i testiranju nije korišteno npr. md5 sifriranje nekih stvari, iako znam da je trebalo i znam to uraditi.
-     To ću da dodatno demonstriram na web hostingu, jer tamo i ima smisla.
        
