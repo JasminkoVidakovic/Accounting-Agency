@@ -23,7 +23,7 @@ EXTRA: Implementirano je grupno slanje email-a (newsletter), klikom na link "Gru
        smtp_port = 465
        sendmail_path = (apsolutna putanja do "sendmail.exe" filea, u mene je : sendmail_path = "C:\wamp64\www\WT_Spirala_4\sendmail -t" )
        
-d) Website je postavljen na hosting, adresa je "http://bilansa.com/", upload je izvršen ovdje jer OpenShift ne prihvata aplikacije Sendmail
+d) Website je postavljen na hosting, adresa je "www.bilansa.com", upload je izvršen ovdje jer OpenShift ne prihvata aplikacije Sendmail
    i sTunnel koje su u ovom folderu.
    
 e) Napravljen je servis "service.php", koji se poziva sa URL parametrom "id", gdje je "id" broj PK-a nekog klijenta u bazi
