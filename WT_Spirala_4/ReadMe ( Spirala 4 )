@@ -64,4 +64,7 @@ EXTRA2 : Dodan je 1 admin i 3 "obična" usera, njihovi pristupni podaci se mogu 
    - U slučaju da se ne mogne uspješno testiranje slanje grupnih mailova, molim za mogućnost da to demonstriram na svom laptopu.
     Naime, jako puno truda i caka je uloženo u ovo, moguće da nešto ne budete postavili pa da ne radi, u tom slučaju se nadam da će
     mi biti dozvoljeno da to demonstriram.
+    
+  - [Update on 21.01 (14:30h)]
+    Riješen problem SQL Injectiona sa "' OR 1=1; --" na password polju na "www.bilansa.com" .
        
